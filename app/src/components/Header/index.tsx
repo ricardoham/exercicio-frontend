@@ -1,6 +1,8 @@
 import React from 'react';
 import { socialBtn } from 'utils/contants';
-import { StyledHeader } from './styles';
+import IconedButton from 'components/IconedButton';
+
+import { HeaderContainer, StyledHeader, HeaderPhoto } from './styles';
 
 interface SocialIcons {
   icon: Function;
@@ -9,21 +11,22 @@ interface SocialIcons {
 
 const Header = () => {
   return (
-    <section>
+    <HeaderContainer>
+      <HeaderPhoto src="/images/profile.png" />
       <StyledHeader>
         <StyledHeader.Title>James Lee</StyledHeader.Title>
         <StyledHeader.Subtitle>Web App Developer</StyledHeader.Subtitle>
-        <div>
+        <StyledHeader.IconList>
           {socialBtn.map((iconItem: SocialIcons) => {
             return (
-              <>
+              <IconedButton url={iconItem.url}>
                 <iconItem.icon />
-              </>
+              </IconedButton>
             );
           })}
-        </div>
+        </StyledHeader.IconList>
       </StyledHeader>
-    </section>
+    </HeaderContainer>
   );
 };
 
