@@ -1,7 +1,7 @@
-import { combineReducers } from 'redux';
+import { Action, combineReducers } from 'redux';
 import { projectsReducer, ProjectsState } from 'reducers/projects';
 
-interface RootState {
+export interface RootState {
   projects: ProjectsState;
 }
 
