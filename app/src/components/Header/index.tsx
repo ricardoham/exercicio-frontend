@@ -17,13 +17,11 @@ const Header = () => {
         <StyledHeader.Title>James Lee</StyledHeader.Title>
         <StyledHeader.Subtitle>Web App Developer</StyledHeader.Subtitle>
         <StyledHeader.IconList>
-          {socialBtn.map((iconItem: SocialIcons) => {
-            return (
-              <IconedButton url={iconItem.url}>
-                <iconItem.icon />
-              </IconedButton>
-            );
-          })}
+          {socialBtn.map((iconItem: SocialIcons) => (
+            <IconedButton url={iconItem.url}>
+              <iconItem.icon />
+            </IconedButton>
+          ))}
         </StyledHeader.IconList>
       </StyledHeader>
     </HeaderContainer>
