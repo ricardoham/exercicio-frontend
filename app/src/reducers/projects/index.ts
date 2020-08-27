@@ -28,7 +28,7 @@ export const projectsReducer = (state = initialState, action: ProjectsAction): P
     case FETCH_PROJECTS_SUCCESS:
       return {
         ...state,
-        projectsData: action.payload,
+        projectsData: action.payload.slice(1),
         newestProject: action.payload.find((el) => el !== undefined),
         isLoading: false,
       };

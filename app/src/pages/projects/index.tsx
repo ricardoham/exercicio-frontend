@@ -1,5 +1,21 @@
 import React from 'react';
+import ContentList from 'components/ContentList';
+import { Projects } from 'model/projects';
+import LastProject from './components/LastProject';
 
-const Projects = () => <div>Works</div>;
+interface Props {
+  projects?: Projects[];
+  newestProject?: Projects;
+  loading: boolean;
+}
 
-export default Projects;
+const ProfileProjects = ({ projects, newestProject, loading }: Props) => {
+  return (
+    <div>
+      <LastProject newestProject={newestProject} />
+      <ContentList content={projects} />
+    </div>
+  );
+};
+
+export default ProfileProjects;

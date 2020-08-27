@@ -1,23 +1,30 @@
 import React from 'react';
+import { FiExternalLink } from 'react-icons/fi';
 import { Projects } from 'model/projects';
 
 import { List, Item } from './styles';
 
 interface Props {
-  content: Projects[];
+  content?: Projects[];
 }
 
 const ContentList = ({ content }: Props) => {
   return (
     <List>
-      {content.map((item) => (
-        <Item>
-          <Item.Image>{item.picture}</Item.Image>
-          <Item.Title>{item.title}</Item.Title>
-          <Item.Content>{item.description}</Item.Content>
-          <Item.Anchor>{item.url}</Item.Anchor>
-        </Item>
-      ))}
+      {content &&
+        content.map((item) => (
+          <Item>
+            <Item.Image src={`/images/${item.picture}`} />
+            <div>
+              <Item.Title>{item.title}</Item.Title>
+              <Item.Content>{item.description}</Item.Content>
+              <Item.Anchor href={item.url}>
+                <FiExternalLink />
+                <Item.AnchorText>Find out more</Item.AnchorText>
+              </Item.Anchor>
+            </div>
+          </Item>
+        ))}
     </List>
   );
 };

@@ -31,6 +31,15 @@ const StyledGlobal = createGlobalStyle`
     font-size: 1rem;
     margin: 0;
   }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
 `;
 
 export default StyledGlobal;

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Iconed = styled.a`
   display: flex;
-  text-decoration: none;
   padding: 0.5rem;
   margin-right: 16px;
   width: 1rem;
