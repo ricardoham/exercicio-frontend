@@ -2,6 +2,7 @@ import React from 'react';
 import ContentList from 'components/ContentList';
 import { Projects } from 'model/projects';
 import LastProject from './components/LastProject';
+import Card from 'components/Card';
 
 interface Props {
   projects?: Projects[];
@@ -11,10 +12,12 @@ interface Props {
 
 const ProfileProjects = ({ projects, newestProject, loading }: Props) => {
   return (
-    <div>
-      <LastProject newestProject={newestProject} />
-      <ContentList content={projects} />
-    </div>
+    <Card header="Latest Projects">
+      <>
+        <LastProject newestProject={newestProject} />
+        <ContentList content={projects} />
+      </>
+    </Card>
   );
 };
 

@@ -5,6 +5,7 @@ const StyledGlobal = createGlobalStyle`
     font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.7;
+    background-color: #DAE3E7;
   }
 
   h1 {
@@ -39,6 +40,10 @@ const StyledGlobal = createGlobalStyle`
   
   a {
     text-decoration: none;
+  }
+
+  .icons {
+    vertical-align: middle;
   }
 `;
 

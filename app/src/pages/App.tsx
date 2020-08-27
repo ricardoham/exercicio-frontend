@@ -1,11 +1,15 @@
 import React from 'react';
 import Header from 'components/Header';
 import ProjectsContainer from 'containers/Projects';
+import About from './about';
+import Address from './adress';
 
 function App() {
   return (
     <main>
       <Header />
+      <About />
+      <Address />
       <ProjectsContainer />
     </main>
   );

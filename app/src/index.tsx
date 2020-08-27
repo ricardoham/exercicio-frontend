@@ -5,12 +5,15 @@ import { store } from 'store';
 import App from './pages/App';
 import * as serviceWorker from './serviceWorker';
 import StyledGlobal from './globalStyles';
+import { IconContext } from 'react-icons/lib';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <StyledGlobal />
-      <App />
+      <IconContext.Provider value={{ className: 'icons' }}>
+        <App />
+      </IconContext.Provider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

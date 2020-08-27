@@ -2,6 +2,8 @@ import React from 'react';
 import { Projects } from 'model/projects';
 import Button from 'components/Button';
 
+import { LastProjectHeader } from './styles';
+
 interface Props {
   newestProject?: Projects;
 }
@@ -14,8 +16,10 @@ const LastProject = ({ newestProject }: Props) => {
     <>
       {newestProject && (
         <section>
-          <h3>{newestProject.title}</h3>
-          <h4>{newestProject.subtitle}</h4>
+          <LastProjectHeader>
+            <LastProjectHeader.Title>{newestProject.title}</LastProjectHeader.Title>
+            <LastProjectHeader.Subtitle>{newestProject.subtitle}</LastProjectHeader.Subtitle>
+          </LastProjectHeader>
           <img src={`/images/${newestProject.picture}`} />
           <p>{newestProject.description}</p>
           <Button color="secondary" onClick={handleClickButton} text="Back My Project" />
