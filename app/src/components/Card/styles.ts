@@ -8,4 +8,5 @@ export const CardContainer = styled.section`
 
 export const CardHeader = styled.h2`
   color: #5c636f;
+  font-weight: 600;
 `;

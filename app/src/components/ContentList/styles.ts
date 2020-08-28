@@ -16,6 +16,8 @@ export const Item: any = styled.li`
 `;
 
 Item.Image = styled.img`
+  width: 100%;
+  height: auto;
   margin-right: 12px;
 `;
 
