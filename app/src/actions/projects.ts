@@ -1,7 +1,7 @@
 import { Dispatch } from 'redux';
 import { Projects } from 'model/projects';
 import { profileAPI } from 'api';
-import { fetchProject, fetchProjectSuccess, fetchProjectFail } from 'actions/actionsTypes';
+import { fetchProject, fetchProjectSuccess, fetchProjectFail } from 'actions/projectActionTypes';
 
 export const getProjects = () => async (dispatch: Dispatch) => {
   try {

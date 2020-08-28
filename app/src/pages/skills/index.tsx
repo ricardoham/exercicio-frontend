@@ -1,5 +1,11 @@
 import React from 'react';
+import { SkillsModel } from 'model/skills';
 
-const Skills = () => <div>Works</div>;
+interface Props {
+  skills?: SkillsModel[];
+  loading: boolean;
+}
 
-export default Skills;
+const ProfileSkills = ({ skills }: Props) => <div>Works</div>;
+
+export default ProfileSkills;

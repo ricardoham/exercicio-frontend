@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Action } from 'redux';
 import { ThunkDispatch } from 'redux-thunk';
-import { RootState } from 'reducers/index';
+import { RootState } from 'reducers/rootReducer';
 import { getProjects } from 'actions/projects';
 import Projects from 'pages/projects';
 

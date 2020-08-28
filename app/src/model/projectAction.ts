@@ -1,4 +1,8 @@
-import { FETCH_PROJECTS, FETCH_PROJECTS_SUCCESS, FETCH_PROJECTS_FAIL } from './actionsTypes';
+import {
+  FETCH_PROJECTS,
+  FETCH_PROJECTS_SUCCESS,
+  FETCH_PROJECTS_FAIL,
+} from 'actions/projectActionTypes';
 import { Projects } from 'model/projects';
 
 interface FetchProjectsAction {

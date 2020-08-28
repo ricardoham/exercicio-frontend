@@ -1,6 +1,10 @@
-import { FETCH_PROJECTS, FETCH_PROJECTS_SUCCESS, FETCH_PROJECTS_FAIL } from 'actions/actionsTypes';
+import {
+  FETCH_PROJECTS,
+  FETCH_PROJECTS_SUCCESS,
+  FETCH_PROJECTS_FAIL,
+} from 'actions/projectActionTypes';
 import { Projects } from 'model/projects';
-import { ProjectsAction } from 'actions/actionModel';
+import { ProjectsAction } from 'model/projectAction';
 
 export interface ProjectsState {
   projectsData?: Projects[];
