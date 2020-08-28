@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.section`
   padding: 24px;
+  margin: 10px;
   background-color: #fff;
 `;
 
