@@ -3,6 +3,8 @@ import { socialBtn } from 'utils/contants';
 import IconedButton from 'components/IconedButton';
 
 import { HeaderContainer, StyledHeader, HeaderPhoto } from './styles';
+import Button from 'components/Button';
+import { IoIosSend } from 'react-icons/io';
 
 interface SocialIcons {
   icon: Function;
@@ -24,6 +26,12 @@ const Header = () => {
           ))}
         </StyledHeader.IconList>
       </StyledHeader>
+      <Button color="primary" onClick={() => console.log('clicked')}>
+        <>
+          <IoIosSend />
+          <span>TEST</span>
+        </>
+      </Button>
     </HeaderContainer>
   );
 };

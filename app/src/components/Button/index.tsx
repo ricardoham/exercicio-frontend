@@ -10,7 +10,7 @@ interface Props {
   onClick: () => void;
 }
 
-const Button = ({ color, text, children, icon, iconedBtn, onClick }: Props) => {
+const Button = ({ color, text, children, onClick }: Props) => {
   return (
     <StyledBtn color={color} onClick={onClick}>
       {text || children}

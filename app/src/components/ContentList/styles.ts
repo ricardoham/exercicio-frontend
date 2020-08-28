@@ -10,6 +10,10 @@ export const Item: any = styled.li`
   display: flex;
   margin-bottom: 24px;
 
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

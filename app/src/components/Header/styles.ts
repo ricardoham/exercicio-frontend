@@ -6,6 +6,9 @@ export const HeaderContainer = styled.section`
   padding: 18px 8px;
   background-color: #f5f5f5;
   border-top: 5px solid #778491;
+  @media only screen and (max-width: 570px) {
+    flex-direction: column;
+  }
 `;
 
 export const HeaderPhoto = styled.img`
@@ -17,7 +20,11 @@ export const HeaderPhoto = styled.img`
 
 export const StyledHeader: any = styled.header`
   display: flex;
+  flex: 1;
   flex-direction: column;
+  @media only screen and (max-width: 570px) {
+    align-items: center;
+  }
   margin-left: 18px;
 `;
 

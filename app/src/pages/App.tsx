@@ -5,15 +5,23 @@ import About from './about';
 import Address from './adress';
 import SkillsContainer from 'containers/Skills';
 
+import { MainContainer, Aside } from './styles';
+
 function App() {
   return (
-    <main>
+    <MainContainer>
       <Header />
-      <About />
-      <Address />
-      <SkillsContainer />
-      <ProjectsContainer />
-    </main>
+      <div>
+        <div>
+          <About />
+          <ProjectsContainer />
+        </div>
+        <Aside>
+          <Address />
+          <SkillsContainer />
+        </Aside>
+      </div>
+    </MainContainer>
   );
 }
 
