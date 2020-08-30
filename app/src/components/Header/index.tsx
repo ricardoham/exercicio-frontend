@@ -19,8 +19,8 @@ const Header = () => {
         <StyledHeader.Title>James Lee</StyledHeader.Title>
         <StyledHeader.Subtitle>Web App Developer</StyledHeader.Subtitle>
         <StyledHeader.IconList>
-          {socialBtn.map((iconItem: SocialIcons) => (
-            <IconedButton url={iconItem.url}>
+          {socialBtn.map((iconItem: SocialIcons, index: number) => (
+            <IconedButton key={index} url={iconItem.url}>
               <iconItem.icon />
             </IconedButton>
           ))}

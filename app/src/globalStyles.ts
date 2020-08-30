@@ -6,6 +6,7 @@ const StyledGlobal = createGlobalStyle`
     font-size: 16px;
     line-height: 1.7;
     background-color: #DAE3E7;
+    margin: 0;
   }
 
   h1 {

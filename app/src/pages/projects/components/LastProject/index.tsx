@@ -8,7 +8,9 @@ import {
   Ribbon,
   WrapperRibbon,
   ProjectImg,
+  ButtonContainer,
 } from './styles';
+import { IoIosThumbsUp } from 'react-icons/io';
 
 interface Props {
   newestProject?: Projects;
@@ -31,7 +33,14 @@ const LastProject = ({ newestProject }: Props) => {
             <Ribbon>App</Ribbon>
           </WrapperRibbon>
           <p>{newestProject.description}</p>
-          <Button color="secondary" onClick={handleClickButton} text="Back My Project" />
+          <ButtonContainer>
+            <Button color="secondary" onClick={handleClickButton}>
+              <>
+                <IoIosThumbsUp />
+                <span>Back My Project</span>
+              </>
+            </Button>
+          </ButtonContainer>
         </LastProjectContainer>
       )}
     </>

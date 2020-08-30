@@ -2,7 +2,20 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.main`
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 `;
 
-export const Aside = styled.aside``;
+export const Content = styled.div`
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  display: flex;
+`;
+
+export const Aside = styled.div`
+  @media only screen and (max-width: 768px) {
+    min-width: 0;
+  }
+  min-width: 400px;
+`;

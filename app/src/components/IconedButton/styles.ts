@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Iconed = styled.a`
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 650px) {
     margin-bottom: 24px;
   }
   display: flex;

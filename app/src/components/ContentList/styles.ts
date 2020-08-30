@@ -9,8 +9,8 @@ export const List: any = styled.ul`
 export const Item: any = styled.li`
   display: flex;
   margin-bottom: 24px;
-
-  @media only screen and (max-width: 500px) {
+  width: 800px;
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
 
@@ -20,9 +20,13 @@ export const Item: any = styled.li`
 `;
 
 Item.Image = styled.img`
-  width: 100%;
-  height: auto;
+  height: 225px;
   margin-right: 12px;
+  @media only screen and (max-width: 600px) {
+    margin-right: 0;
+    width: 800px;
+    height: 333px;
+  }
 `;
 
 Item.Title = styled.h4``;

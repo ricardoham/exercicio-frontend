@@ -12,8 +12,8 @@ const ContentList = ({ content }: Props) => {
   return (
     <List>
       {content &&
-        content.map((item) => (
-          <Item>
+        content.map((item: Projects, index: number) => (
+          <Item key={index}>
             <Item.Image src={`/images/${item.picture}`} />
             <div>
               <Item.Title>{item.title}</Item.Title>

@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.section`
   display: flex;
   align-items: center;
-  padding: 18px 8px;
+  padding: 18px 24px;
   background-color: #f5f5f5;
   border-top: 5px solid #778491;
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -22,7 +22,7 @@ export const StyledHeader: any = styled.header`
   display: flex;
   flex: 1;
   flex-direction: column;
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 600px) {
     align-items: center;
   }
   margin-left: 18px;

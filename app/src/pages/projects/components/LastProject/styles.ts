@@ -25,6 +25,10 @@ export const ProjectImg = styled.img`
   width: 100%;
 `;
 
+export const ButtonContainer = styled.div`
+  align-self: center;
+`;
+
 export const LastProjectHeader: any = styled.header`
   display: flex;
   flex-direction: column;
