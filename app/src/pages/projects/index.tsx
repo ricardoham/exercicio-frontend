@@ -16,6 +16,7 @@ const ProfileProjects = ({ projects, newestProject, loading }: Props) => {
     <Card header="Latest Projects">
       <>
         <LastProject newestProject={newestProject} />
+        <Divider />
         <ContentList content={projects} />
       </>
     </Card>

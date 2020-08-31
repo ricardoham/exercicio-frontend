@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const MainContainer = styled.main`
-  display: flex;
+export const MainContainer = styled.div`
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 `;
 
 export const Content = styled.div`

@@ -14,9 +14,9 @@ interface SocialIcons {
 const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderPhoto src="/images/profile.png" />
+      <HeaderPhoto src="/images/profile.jpg" />
       <StyledHeader>
-        <StyledHeader.Title>James Lee</StyledHeader.Title>
+        <StyledHeader.Title>Ricardo T. Manoel Junior</StyledHeader.Title>
         <StyledHeader.Subtitle>Web App Developer</StyledHeader.Subtitle>
         <StyledHeader.IconList>
           {socialBtn.map((iconItem: SocialIcons, index: number) => (
@@ -26,10 +26,10 @@ const Header = () => {
           ))}
         </StyledHeader.IconList>
       </StyledHeader>
-      <Button color="primary" onClick={() => console.log('clicked')}>
+      <Button color="primary" onClick={() => (window.location.href = 'mailto:rdomanoel@gmail.com')}>
         <>
           <IoIosSend />
-          <span>TEST</span>
+          <span>Contact me</span>
         </>
       </Button>
     </HeaderContainer>

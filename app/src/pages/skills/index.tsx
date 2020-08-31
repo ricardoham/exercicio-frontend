@@ -12,9 +12,17 @@ const ProfileSkills = ({ skills }: Props) => {
   return (
     <Card header="Skills">
       <>
-        <p>aaa</p>
-        {skills?.map((skill: SkillsModel) => (
-          <ProgressBar name={skill.name} rank={skill.rank} percentage={skill.percentage} />
+        <p>
+          Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+          Nam eget dui. Etiam rhoncus. Maecenas tempus
+        </p>
+        {skills?.map((skill: SkillsModel, index: number) => (
+          <ProgressBar
+            key={index}
+            name={skill.name}
+            rank={skill.rank}
+            percentage={skill.percentage}
+          />
         ))}
       </>
     </Card>

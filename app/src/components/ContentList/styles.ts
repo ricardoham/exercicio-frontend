@@ -9,8 +9,7 @@ export const List: any = styled.ul`
 export const Item: any = styled.li`
   display: flex;
   margin-bottom: 24px;
-  width: 800px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1095px) {
     flex-direction: column;
   }
 
@@ -24,8 +23,6 @@ Item.Image = styled.img`
   margin-right: 12px;
   @media only screen and (max-width: 600px) {
     margin-right: 0;
-    width: 800px;
-    height: 333px;
   }
 `;
 
