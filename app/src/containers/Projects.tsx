@@ -14,6 +14,7 @@ const ProjectsContainer = () => {
 
   useEffect(() => {
     dispatch(getProjects());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <Projects projects={projectsData} newestProject={newestProject} loading={isLoading} />;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'components/Card';
 import { IoIosPin, IoIosMail, IoIosLink } from 'react-icons/io';
+
 import { AddressContainer, Text } from './styles';
 
 const Address = () => (

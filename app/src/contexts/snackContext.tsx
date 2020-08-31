@@ -7,7 +7,7 @@ interface SnackBarContext {
 }
 
 interface PropsProvider {
-  children?: JSX.Element;
+  children?: React.ReactNode;
 }
 
 const CreationContext = createContext({} as SnackBarContext);

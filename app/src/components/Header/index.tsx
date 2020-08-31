@@ -1,13 +1,13 @@
 import React from 'react';
 import { socialBtn } from 'utils/contants';
 import IconedButton from 'components/IconedButton';
-
-import { HeaderContainer, StyledHeader, HeaderPhoto } from './styles';
 import Button from 'components/Button';
 import { IoIosSend } from 'react-icons/io';
+import { IconType } from 'react-icons/lib';
 
+import { HeaderContainer, StyledHeader, HeaderPhoto } from './styles';
 interface SocialIcons {
-  icon: Function;
+  icon: IconType;
   url: string;
 }
 

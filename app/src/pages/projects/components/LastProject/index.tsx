@@ -1,6 +1,8 @@
 import React from 'react';
 import { Projects } from 'model/projects';
 import Button from 'components/Button';
+import { IoIosThumbsUp } from 'react-icons/io';
+import useSnackBar from 'hooks/useSnackbar';
 
 import {
   LastProjectContainer,
@@ -10,9 +12,6 @@ import {
   ProjectImg,
   ButtonContainer,
 } from './styles';
-import { IoIosThumbsUp } from 'react-icons/io';
-
-import useSnackBar from 'hooks/useSnackbar';
 
 interface Props {
   newestProject?: Projects;
@@ -20,10 +19,7 @@ interface Props {
 
 const LastProject = ({ newestProject }: Props) => {
   const { insert } = useSnackBar();
-  // const handleClickButton = () => {
-  //   console.log('clicked', bla);
-  //   insert('bla');
-  // };
+
   return (
     <>
       {newestProject && (
@@ -38,7 +34,7 @@ const LastProject = ({ newestProject }: Props) => {
           </WrapperRibbon>
           <p>{newestProject.description}</p>
           <ButtonContainer>
-            <Button color="secondary" onClick={() => insert('Thank Your')}>
+            <Button color="secondary" onClick={() => insert('Thanks for Support!')}>
               <>
                 <IoIosThumbsUp />
                 <span>Back My Project</span>

@@ -5,7 +5,7 @@ export const HeaderContainer = styled.section`
   align-items: center;
   padding: 18px 24px;
   background-color: #f5f5f5;
-  border-top: 5px solid #778491;
+  border-top: 10px solid #778491;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
@@ -29,6 +29,9 @@ export const StyledHeader: any = styled.header`
 `;
 
 StyledHeader.Title = styled.h1`
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
   color: #49515c;
   font-weight: 600;
 `;

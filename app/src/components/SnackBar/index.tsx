@@ -13,6 +13,7 @@ const SnackBar = ({ text, remove }: SnackBarProps) => {
       remove && remove();
     }, 3000);
     return () => clearTimeout(snackId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <SnackBarContainer>{text}</SnackBarContainer>;

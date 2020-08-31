@@ -32,6 +32,7 @@ Item.Content = styled.p``;
 
 Item.Anchor = styled.a`
   color: #53b076;
+  cursor: pointer;
 `;
 
 Item.AnchorText = styled.span`
