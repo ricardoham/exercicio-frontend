@@ -4,6 +4,7 @@ import { Projects } from 'model/projects';
 import LastProject from './components/LastProject';
 import Card from 'components/Card';
 import Divider from 'components/Divider';
+import Loader from 'components/Loader';
 
 interface Props {
   projects?: Projects[];
@@ -14,11 +15,15 @@ interface Props {
 const ProfileProjects = ({ projects, newestProject, loading }: Props) => {
   return (
     <Card header="Latest Projects">
-      <>
-        <LastProject newestProject={newestProject} />
-        <Divider />
-        <ContentList content={projects} />
-      </>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <LastProject newestProject={newestProject} />
+          <Divider />
+          <ContentList content={projects} />
+        </>
+      )}
     </Card>
   );
 };

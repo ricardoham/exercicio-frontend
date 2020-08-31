@@ -32,7 +32,8 @@ export const skillsReducer = (state = initialState, action: SkillsAction): Skill
       return {
         ...state,
         skillsData: undefined,
-        isLoading: false,
+        isLoading: true,
+        error: action.payload,
       };
     default:
       return state;

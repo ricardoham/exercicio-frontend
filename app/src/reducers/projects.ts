@@ -41,7 +41,8 @@ export const projectsReducer = (state = initialState, action: ProjectsAction): P
         ...state,
         projectsData: undefined,
         newestProject: undefined,
-        isLoading: false,
+        isLoading: true,
+        error: action.payload,
       };
     default:
       return state;
