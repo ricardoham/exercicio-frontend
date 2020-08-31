@@ -6,13 +6,16 @@ import App from './pages/App';
 import * as serviceWorker from './serviceWorker';
 import StyledGlobal from './globalStyles';
 import { IconContext } from 'react-icons/lib';
+import { SnackBarProvider } from 'contexts/snackContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <StyledGlobal />
       <IconContext.Provider value={{ className: 'icons' }}>
-        <App />
+        <SnackBarProvider>
+          <App />
+        </SnackBarProvider>
       </IconContext.Provider>
     </Provider>
   </React.StrictMode>,
